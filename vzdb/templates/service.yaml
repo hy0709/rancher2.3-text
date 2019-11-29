@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "vzdb.fullname" . }}
+  labels:
+{{ include "vzdb.labels" . | indent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.externallPort }}
+      targetPort: {{ .Values.service.internalPort }}
+      protocol: TCP
+      name: {{ .Values.service.name }}
+  selector:
+    app: {{ include "vzdb.name" . }}
+    release: {{ .Release.Name }}

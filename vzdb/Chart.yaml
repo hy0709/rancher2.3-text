@@ -1,0 +1,16 @@
+name: vzdb
+version: 0.0.1
+apiVersion: v1
+appVersion: "2.72.1"
+description: 这里是应用的剪短描述
+keywords:
+- vzdb
+- database
+icon: file://../vzdb.jpg
+# home: https://mariadb.org 项目地址 （可选）
+#sources: （可选  当前chart的下载地址）
+#- https://github.com/bitnami/bitnami-docker-mariadb
+maintainers:
+  - name: 张三
+    email: zahngsan@gmail.com
+engine: gotpl

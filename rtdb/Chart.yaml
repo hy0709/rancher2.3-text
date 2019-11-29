@@ -1,0 +1,13 @@
+apiVersion: v1
+description: 我也不知道是干嘛用的，在rtdb最外层Chart.yaml中 
+maintainers:
+- name: zhangsan
+  email: zhangsan@tt.com
+name: rtdb
+version: 0.0.1
+appVersion: "1.2.0"
+keywords:
+- oge
+- kdm
+# icon: file://./kdm.jpg
+engine: gotpl
