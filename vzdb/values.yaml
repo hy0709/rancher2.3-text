@@ -9,13 +9,6 @@ image:
   tag: 2.72.1
   pullPolicy: IfNotPresent
 
-env:
-  name: rtdb
-  port: 22235
-  username: root
-  password: root1234
-  rule: ^.{29}[^C].{3}$
-
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""

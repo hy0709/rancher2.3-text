@@ -1,0 +1,58 @@
+categories:
+- Oge
+questions:
+- variable: image.repository
+  default: "oge/kdm-rtdb-vzdb"
+  description: "需要的rtdb-vzdb镜像名称"
+  type: string
+  group: "Rtdb Vzdb Images Version"
+  label: rtdb-vzdb镜像名称
+- variable: image.tag
+  default: "1.2.0"
+  description: "需要的rtdb-vzdb镜像版本"
+  type: string
+  group: "Rtdb Vzdb Images Version"
+  label: rtdb-vzdb镜像版本号
+- variable: service.externallPort
+  default: "30001"
+  description: "rtdb-vzdb端口"
+  type: string
+  group: "Rtdb Vzdb Settings"
+  label: rtdb镜像端口
+
+- variable: env.name
+  description: "与库无关信息：如桐子林的vzdb与库无关--写成 vzdb_tzl(不得含有中文)"
+  type: string
+  group: "Rtdb Vzdb Settings"
+  label: 服务名称
+  default: "test"
+# - variable: rtdb.env.host
+#   default: "MY_SERVICE_SERVICE_HOST"
+#   description: "vzdb名称"
+#   type: string
+#   group: "Rtdb Vzdb Settings"
+#   label: vzdb名称
+- variable: env.port
+  default: "22235"
+  description: "vzdb端口"
+  type: string
+  group: "Rtdb Vzdb Settings"
+  label: vzdb镜像端口
+- variable: env.username
+  default: "root"
+  description: "Password used by the MySQL root user"
+  type: string
+  group: "Rtdb Vzdb Settings"
+  label: vzdb用户名
+- variable: env.password
+  default: "root1234"
+  description: "Password used by the MySQL root user."
+  type: string
+  group: "Rtdb Vzdb Settings"
+  label: vzdb密码
+- variable: env.rule
+  default: "^.{29}[^C].{3}$"
+  description: "该实时库所能处理的KKS编码规则，如：^EB000.{24}[^C].{3}$"
+  type: string
+  group: "Rtdb Vzdb Settings"
+  label: 与库无关编码规则

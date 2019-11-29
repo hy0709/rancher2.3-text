@@ -1,0 +1,32 @@
+categories:
+- Oge
+- Database
+questions:
+- variable: defaultImage
+  default: true
+  description: "Use default vzdb images"
+  label: Use Default vzdb Images
+  type: boolean
+  show_subquestion_if: false
+  group: "Vzdb Container Images"
+  subquestions:
+  - variable: image.repository
+    default: "docker.orientge.cn:5000/oge/vzdb"
+    description: "需要的vzdb镜像名称"
+    type: string
+    label: vzdb镜像名称
+  - variable: image.tag
+    default: "2.72.1"
+    description: "需要的vzdb镜像版本"
+    type: string
+    label: vzdb镜像版本号
+  - variable: service.externallPort
+    default: "32235"
+    description: "端口"
+    type: string
+    label: 镜像端口
+  # - variable: service.vzevt.port
+  #   default: "32136"
+  #   description: "vzevt端口"
+  #   type: string
+  #   label: vzevt端口
