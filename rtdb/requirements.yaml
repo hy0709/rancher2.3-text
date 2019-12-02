@@ -2,4 +2,4 @@ dependencies:
   - name: vzdb
     version: 0.0.1
     repository: https://github.com/hy0709/rancher2.3-text/tree/master/vzdb
-    condition: vzdb.enable
+    condition: true
