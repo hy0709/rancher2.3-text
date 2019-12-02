@@ -6,6 +6,10 @@ metadata:
 {{ include "vzdb.labels" . | indent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "vzdb.name" . }}
+      release: {{ .Release.Name }}
   template:
     metadata:
       labels:
