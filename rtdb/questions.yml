@@ -43,7 +43,7 @@ questions:
   description: "Password used by the MySQL root user"
   type: string
   group: "Rtdb Vzdb Settings"
-  label: vzdb用户名
+  label: vzdb用户名cd 
 - variable: env.password
   default: "root1234"
   description: "Password used by the MySQL root user."
